@@ -1,6 +1,12 @@
-# 화면전환+데이터전달
+# 화면전환,데이터전달, initalViewController에 네비 달아주기 , rootViewController전환(with. UserDefaults),
 
 <br/><br/><br/><br/>
+
+<img width="544" alt="스크린샷 2022-07-30 15 41 30" src="https://user-images.githubusercontent.com/106936018/181878253-615c009a-1e93-4610-b0f3-208606151763.png">
+
+
+
+<br/><br/>
 
 ## 1️⃣ 화면전환
 
@@ -8,8 +14,12 @@
 
 ### ✏️ 화면전환 방법 2가지
 
+<br/><br/>
+
 1) Present
 2) Push(with. 네비)
+
+<br/><br/>
 
 ⚠️ 두개는 양립 될수가 없습니다. Presnet 로 갔다고 pop 으로 돌아 오면 안먹습니다. 반대도 같습니다.
 
@@ -23,11 +33,17 @@
 
 ### ✏️ 다양한 화면전환 경우 실습 해보기
 
+<br/><br/>
+
 ####  ▫️Present로 이동 + 스토리보드로 네비 달고 Push 로 이동
 
 <img width="523" alt="스크린샷 2022-07-30 15 30 41" src="https://user-images.githubusercontent.com/106936018/181877910-9424226c-0fce-41a0-b70d-efd7bdba1ed9.png">
 
 <img width="942" alt="스크린샷 2022-07-30 15 30 53" src="https://user-images.githubusercontent.com/106936018/181877915-f2136e0d-e025-4586-b968-d71cabc4018b.png">
+
+
+
+<br/><br/>
 
 > ⚠️  타입캐스팅 안되어 있다?: 화면전환 만 할경우, UIViewController 만으로도 충분 하기 때문에 안해줘도됨.
 > 하지만, 다음 화면 에 데이터를 전달하기 위해서, 다음화면 class **인스턴스** 프로퍼티에 접근 해야 하기 때문에, 
@@ -45,6 +61,8 @@
 
 ####  ▫️ 코드로 네비달고 Push
 
+<br/><br/>
+
 ```swift
 let sb = UIStoryboard(name: "Main", bundle: nil)
 let vc = sb.instantiateViewController(withIdentifier:"VC2") 
@@ -52,12 +70,16 @@ let nav = UINavigationController(rootViewController: vc) // 네비 달아주기
 self.present(nav, animated: true, completion: nil) 
 ```
 
+<br/><br/>
+
 > ⚠️ navi로 잘 가다가 present된 모달이 나오면 네비에 있는 스택들 다 날라감. 
 >
 > ⚠️ 그럼 기존 Navi1스택 안에 있던 VC1 이 present(VC2) 했으면? --> 네비바도 당연히 사라짐!
 > VC2 부터는 Navi1 의 제어를 안받는 다는것!
 >
 > 
+
+<br/><br/>
 
 코드를 그림그로 그려 보면 아래와 같음 
 
@@ -162,6 +184,8 @@ UserDefaults.standard.string(forKey: "FirstSceneDetector") == nil
 
 ### ✏️전달, 받아오기 실습
 
+>  ⚠️ 받아 오는 쪽에서는 항상 저장소 만들어야됩니다.
+
 <br/><br/>▫️ 동기방식의 데이터 전달 과 받아오기
 
 <br/><br/>
@@ -203,6 +227,8 @@ UserDefaults.standard.string(forKey: "FirstSceneDetector") == nil
 <br/><br/><br/><br/>
 
 **근데**! 여기서 우리는 **VC3 -> VC2 로 가는 한정!!!! 해서 데이터 전달을 함** 앱에 정보를 입력 하고, 다른 화면 갔다 왔는데 그 정보가 사라져 있어... 이게 동기 방식의 한계 입니다. 
+
+<br/><br/>
 
 <img width="957" alt="스크린샷 2022-07-30 15 31 50" src="https://user-images.githubusercontent.com/106936018/181877957-6563e601-e493-43bc-9c4f-8525e3f77f86.png">
 

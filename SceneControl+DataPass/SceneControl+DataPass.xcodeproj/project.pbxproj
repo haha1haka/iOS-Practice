@@ -29,7 +29,7 @@
 		F418CD172894E0EE00E915AB /* VC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
 		F418CD192894E0F500E915AB /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
 		F418CD1B2894E0FC00E915AB /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
-		F4B5FEAE28940F71005AD506 /* VCTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B5FEAE28940F71005AD506 /* SceneControl+DataPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SceneControl+DataPass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B5FEB128940F71005AD506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B5FEB328940F71005AD506 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4B5FEB528940F71005AD506 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		F4B5FEA528940F71005AD506 = {
 			isa = PBXGroup;
 			children = (
-				F4B5FEB028940F71005AD506 /* VCTransition */,
+				F4B5FEB028940F71005AD506 /* SceneControl+DataPass */,
 				F4B5FEAF28940F71005AD506 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,12 +77,12 @@
 		F4B5FEAF28940F71005AD506 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4B5FEAE28940F71005AD506 /* VCTransition.app */,
+				F4B5FEAE28940F71005AD506 /* SceneControl+DataPass.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F4B5FEB028940F71005AD506 /* VCTransition */ = {
+		F4B5FEB028940F71005AD506 /* SceneControl+DataPass */ = {
 			isa = PBXGroup;
 			children = (
 				F4B5FEB128940F71005AD506 /* AppDelegate.swift */,
@@ -94,7 +94,7 @@
 				F4B5FEBC28940F73005AD506 /* LaunchScreen.storyboard */,
 				F4B5FEBF28940F73005AD506 /* Info.plist */,
 			);
-			path = VCTransition;
+			path = "SceneControl+DataPass";
 			sourceTree = "<group>";
 		};
 		F4B5FEC928941591005AD506 /* Scene1 */ = {
@@ -121,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F4B5FEAD28940F71005AD506 /* VCTransition */ = {
+		F4B5FEAD28940F71005AD506 /* SceneControl+DataPass */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4B5FEC228940F73005AD506 /* Build configuration list for PBXNativeTarget "VCTransition" */;
+			buildConfigurationList = F4B5FEC228940F73005AD506 /* Build configuration list for PBXNativeTarget "SceneControl+DataPass" */;
 			buildPhases = (
 				F4B5FEAA28940F71005AD506 /* Sources */,
 				F4B5FEAB28940F71005AD506 /* Frameworks */,
@@ -133,9 +133,9 @@
 			);
 			dependencies = (
 			);
-			name = VCTransition;
+			name = "SceneControl+DataPass";
 			productName = VCTransition;
-			productReference = F4B5FEAE28940F71005AD506 /* VCTransition.app */;
+			productReference = F4B5FEAE28940F71005AD506 /* SceneControl+DataPass.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +153,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F4B5FEA928940F71005AD506 /* Build configuration list for PBXProject "VCTransition" */;
+			buildConfigurationList = F4B5FEA928940F71005AD506 /* Build configuration list for PBXProject "SceneControl+DataPass" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F4B5FEAD28940F71005AD506 /* VCTransition */,
+				F4B5FEAD28940F71005AD506 /* SceneControl+DataPass */,
 			);
 		};
 /* End PBXProject section */
@@ -349,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M526U856M5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VCTransition/Info.plist;
+				INFOPLIST_FILE = "SceneControl+DataPass/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main3;
@@ -361,7 +361,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.haha1haka.VCTransition;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haha1haka.SceneControl+DataPass";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -378,7 +378,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M526U856M5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VCTransition/Info.plist;
+				INFOPLIST_FILE = "SceneControl+DataPass/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main3;
@@ -390,7 +390,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.haha1haka.VCTransition;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haha1haka.SceneControl+DataPass";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -401,7 +401,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F4B5FEA928940F71005AD506 /* Build configuration list for PBXProject "VCTransition" */ = {
+		F4B5FEA928940F71005AD506 /* Build configuration list for PBXProject "SceneControl+DataPass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4B5FEC028940F73005AD506 /* Debug */,
@@ -410,7 +410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4B5FEC228940F73005AD506 /* Build configuration list for PBXNativeTarget "VCTransition" */ = {
+		F4B5FEC228940F73005AD506 /* Build configuration list for PBXNativeTarget "SceneControl+DataPass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4B5FEC328940F73005AD506 /* Debug */,
