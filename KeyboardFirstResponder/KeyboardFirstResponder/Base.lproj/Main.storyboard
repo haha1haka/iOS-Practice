@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Keyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4if-WF-usf">
+                                <rect key="frame" x="0.0" y="74" width="414" height="64"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6uT-o1-rhd">
+                                        <rect key="frame" x="10" y="15" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6uT-o1-rhd" secondAttribute="trailing" constant="10" id="01S-Sf-7K0"/>
+                                    <constraint firstItem="6uT-o1-rhd" firstAttribute="leading" secondItem="4if-WF-usf" secondAttribute="leading" constant="10" id="0lb-um-XW2"/>
+                                    <constraint firstAttribute="height" constant="64" id="1D2-W4-34Q"/>
+                                    <constraint firstItem="6uT-o1-rhd" firstAttribute="centerY" secondItem="4if-WF-usf" secondAttribute="centerY" id="uk0-rI-GOT"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyp-hj-huS">
+                                <rect key="frame" x="374" y="148" width="30" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="tappedWriteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5tp-hB-u8T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4if-WF-usf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zbx-y3-don"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uyp-hj-huS" secondAttribute="trailing" constant="10" id="eSs-r6-Fqb"/>
+                            <constraint firstItem="4if-WF-usf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="mEC-2m-vym"/>
+                            <constraint firstItem="Uyp-hj-huS" firstAttribute="top" secondItem="4if-WF-usf" secondAttribute="bottom" constant="10" id="nuv-Bv-xPz"/>
+                            <constraint firstItem="4if-WF-usf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sBS-mR-lOz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="6uT-o1-rhd" id="u1n-Pl-b7Y"/>
+                        <outlet property="writeButton" destination="Uyp-hj-huS" id="CWz-8f-YTz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258" y="91"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
