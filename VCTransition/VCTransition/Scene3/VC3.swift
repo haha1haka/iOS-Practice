@@ -19,8 +19,14 @@ class VC3: UIViewController {
     
     @objc func datapass() {
         
-        guard let vc2 = self.navigationController?.viewControllers[1] as? VC2 else { return }
-        vc2.fromVc3 = textField.text ?? ""
+        
+        //직접 동기식으로 데이터 전달
+//        guard let vc2 = self.navigationController?.viewControllers[1] as? VC2 else { return }
+//        vc2.fromVc3 = textField.text ?? ""
+//        self.navigationController?.popViewController(animated: true)
+        
+        // 비동기식 Userdefault 이용한 데이터 전달
+        UserDefaults.standard.set(textField.text ?? "", forKey: "textfieldname")
         self.navigationController?.popViewController(animated: true)
         
     }

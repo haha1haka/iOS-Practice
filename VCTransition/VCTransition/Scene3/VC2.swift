@@ -25,9 +25,12 @@ class VC2: UIViewController {
     
     
     
-    
+    // 뒤에서 오는 데이터들은 다 여기로~
     override func viewWillAppear(_ animated: Bool) {
-        fromvc3label.text = "VC3에서 보냄 : \(fromVc3 ?? "@@") 입니다."
+//        fromvc3label.text = "VC3에서 보냄 : \(fromVc3 ?? "@@") 입니다."
+        
+        let userDefaultsData = UserDefaults.standard.string(forKey: "textfieldname")
+        fromvc3label.text = "VC3에서 보냄 : \(userDefaultsData ?? "@@") 입니다."
     }
 
 

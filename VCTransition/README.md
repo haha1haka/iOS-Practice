@@ -196,12 +196,24 @@ self.navigationContorller?.viewControllers // --> [UIViewController] , 난 인�
 
 
 
+
+
+
+
+
+
+
+
+
+
 #### ▫️ 비동기 방식으로 데이터 전달 과 받아오기
 
 > ⚠️AppDelegate 파일을 통해서도 가능 하지만, 앱 종료후 데이터 사라집니다!
 >
-> 여기선 UserDefaults 만 소개
+> 여기선 UserDefaults 만 실습
 
 
 
 ![스크린샷 2022-07-30 12.35.11](/Users/haha1haka/Library/Application Support/typora-user-images/스크린샷 2022-07-30 12.35.11.png)
+
+![스크린샷 2022-07-30 15.14.12](/Users/haha1haka/Library/Application Support/typora-user-images/스크린샷 2022-07-30 15.14.12.png)
